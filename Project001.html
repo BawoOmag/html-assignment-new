@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAG.SNEAKERBOY</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(185, 182, 182);
+        }
+        header {
+            background-color: #0f1210;
+            color: rgb(255, 204, 0);
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: rgb(29, 84, 29);
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: #fff;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: rgb(255, 204, 0);
+            color: black;
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        footer {
+            background-color: #0f1210;
+            color: rgb(255, 204, 0);
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .active {
+            color: red;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        form label {
+            display: block;
+            margin-bottom: 8px;
+        }
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        form input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        form input[type="submit"]:hover {
+            background-color: #555;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Header Section -->
+<header>
+    <h2>LAG.SNEAKERBOY</h2>
+</header>
+<!-- Navigation Bar -->
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#work">Work</a>
+    <a href="#resume">Resume</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<!-- Main Content -->
+<main>
+    <!-- Home Section -->
+    <section id="home">
+        <h3>HOME</h3>
+        <p></p>
+        <img width="300" src="Nike Dunk Shoes,Buy Nike Dunk Low Sneakers For Women And Men (1).jpeg" alt="LSB">
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>ABOUT</h2>
+        <p>LAG.SNEAKERBOY is a contemporary urbanwear brand that deals in majorly sneaker footwear as an assesory to urban everyday outfits. its been in existence for half a decade since 2019 and have served over 1000 customers accross Lagos and Nigeria.</p>
+    </section>
+
+    <!-- Work Section -->
+    <section id="work">
+        <h2>WORK/SERVICES</h2>
+        <p></p>
+        <ul>
+            <li>Sneaker retailing</li>
+            <li>Personal shopping services</li>
+            <li>Personal styling</li>
+            <li>Wholesaling</li>
+        </ul>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume">
+        <h2>RESUME</h2>
+        <p>Our work rates:</p>
+        <table>
+            <tr>
+                <th>Service</th>
+                <th>Rate</th>
+            </tr>
+            <tr>
+                <td>Sneaker retailing</td>
+                <td>$20-$500</td>
+            </tr>
+            <tr>
+                <td>Personal shopping</td>
+                <td>$50 per day</td>
+            </tr>
+            <tr>
+                <td>Personal styling</td>
+                <td>$50-$200</td>
+            </tr>
+            <tr>
+                <td>Wholesaling</td>
+                <td>based on size of order</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="submit_form.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <!-- Video Section -->
+    <section>
+        <h2>Watch Our Video</h2>
+        <iframe width="912" height="513" src="https://www.youtube.com/embed/nMdBtOdzXhQ" title="Sneakers Store Promo Video | @aidacreative.id" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
+
+    <!-- Audio Section -->
+    <section>
+        <h2>Listen To Our Audio</h2>
+        <audio controls>
+            <source src="Youre Gonna Be Okay Lyric Video  Brian  Jenn Johnson  After All These Years.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </section>
+</main>
+
+<!-- Footer Section -->
+<footer>
+    <p>&copy; 2024 LAG.SNEAKERBOY  All rights reserved.</p>
+</footer>
+
+<!-- JavaScript for Scrollspy -->
+<script>
+    window.addEventListener('scroll', function() {
+        var sections = document.querySelectorAll('section');
+        var navLinks = document.querySelectorAll('nav a');
+        var currentSection = '';
+
+        sections.forEach(function(section) {
+            var sectionTop = section.offsetTop;
+            var sectionHeight = section.clientHeight;
+            if (pageYOffset >= sectionTop - sectionHeight / 3) {
+                currentSection = section.getAttribute('id');
+            }
+        });
+
+        navLinks.forEach(function(link) {
+            link.classList.remove('active');
+            if (link.getAttribute('href').slice(1) === currentSection) {
+                link.classList.add('active');
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
